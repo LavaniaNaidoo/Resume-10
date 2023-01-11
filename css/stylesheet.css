@@ -42,9 +42,10 @@ body{
   overflow: unset;
 }
 .cont{
-  padding-left: 25px;
+  padding-left: 30px;
   padding-top: 20px;
   padding-right: 20px;
+  width: 97rem;
 }
 #CVPicture{
   width: 20%;
@@ -77,14 +78,16 @@ p{
 }
 
 footer {
-  background-color:#bd68b5;
+  background-image: url(../Images/sky6.jpg);
+  background-repeat:no-repeat;
   text-align: center;
-  height: 10%;
-  width: 100%;
+  height: 90%;
+  width: 106%;
+  margin-left: -5%;
 }
 
 .icons{
-  width: 3rem;
+  width: 4rem;
   margin: 0.5rem;
   height: auto;
 }
@@ -101,3 +104,27 @@ footer {
 
 }
 
+.card-img-top{
+  width: 150px;
+  height: 250px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 1500px;
+  height: 700px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

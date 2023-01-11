@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width", initial-scale="1", shrink-to-fit="no">
-  <meta name="description" content="a flexible grid demo">
-  <meta name="author" content="Lyndon">
-<title> Lavania Naidoo- Resume' 9 </title>
-<link rel="stylesheet" href="css/stylesheet.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <title> Lavania Naidoo </title>
 </head>
 <body>
-  <ul class="nav justify-content-center">
+
+  <!-- Navbar -->
+  <ul class="nav justify-content-center me-9 fs-5 h-font">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#education"> Education </a>
     </li>
@@ -21,137 +26,337 @@
       <a class="nav-link" href="#skills"> Skills </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#contact Me"> Contact me </a>
+      <a class="nav-link" href="#projectPreview"> Project Preview </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contactMe"> Contact me </a>
     </li>
   </ul>
 
+<!-- Profile picture -->
   <header id="Heading">
     <img
-    src="Images/CV Picture.jpg"
+    src="Images/ProfilePic.jpg"
     width="200px"
     alt="Profile Picture Here"
-    <img id="CVPicture" src="Images/CV Picture.jpg" alt="My profile picture here" align="left">
+    <img id="CVPicture" src="Images/CV Picture.jpg" alt="My profile picture here" align="left"> </img>
     <picture>
       <source media="max-width 650px" srcset="Images/CV Picture - Copy small.jpg">
       <source media="max-width 1400px" srcset="Images/CV Picture - Copy medium.jpg">
     </picture>
   <br>
+
+  <!-- Headline -->
   <div class="container pt-3"></div>
     <p> <u>Matriculant | Digital Marketer | Junior Software Developer </u> </p>
     <h3> Hi, nice to meet you </h3>
     <h1> I'm Lavania Elizabeth Naidoo </h1>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <p> I am a highly motivated and personable Junior Software Developer with a Digital Marketing Certification and a Matric certification that is eager to start a career at your esteemed company. My excellent command of the English language, combined with the easy manner I communicate with makes me the perfect candidate to interact with your clients and users alike. My goal is to one day be a great custodian of your company that makes a real impact from day one.</p>
   </br>
   </header>
+
+<!-- Education section -->
 <main class="main">
 
-<div id="Content">
-  <div class="cont">
+<div id="Content"> 
+  <div class="cont"> 
 <h2 id="education"> <u> Education </u> </h2>
-<div class="container-fluid">
-  <div class="row justify-content-left">
-    <div class="col-sm">
-      <h4>Intro to Web at <a href="https://www.codespace.co.za/courses"
-        target="_blank" > CodeSpace Academy </a> </h4>
-        <p> I have studied and completed my Intro to Web qualification at CodeSpace Academy. I started on June 27 and finished on 11 July 2022. I am proficient in HTML VSC (Visual Studio Code) and CSS (Cascading Style Sheets). </p>
+<div class="card mb-3 mt-4">
+  <img src="Images/CodeSpace.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title"> CodeSpace Academy </h4>
+    <h6 class="subtitle"> Software Development Certificate </h6>
+    <p class="card-text"> 
+      <li> At CodeSpace I learnt backend and frontend web development to create dynamic web applications. </li>
+      <li> I built real-life coding projects, including an Online Store, and a Netflix Clone. </li>
+    </p>
+    <p class="card-text"><small class="text-muted"> June 2021- Jan 2022 </small></p>
+  </div>
+</div>
+<div class="card mb-3 mt-4">
+  <img src="Images/Google.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title"> Google </h4>
+    <h6 class="subtitle"> Digital Marketing Certificate </h6>
+    <p class="card-text"> 
+      <li> I studied online through Google to obtain my certification. </li>
+      <li> I learnt the Fundamentals of Digital Marketing as well as a bit of SEO. </li>
+    </p>
+    <p class="card-text"><small class="text-muted"> Jan 2021- April 2021 </small></p>
+  </div>
+</div>
+<div class="card mb-3 mt-4">
+  <img src="Images/AGHS1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title"> Allen Glen Highschool </h4>
+    <h6 class="subtitle"> Matric Certificate </h6>
+    <p class="card-text"> 
+      <li> I studied and obtained a Bachelor's pass with an NQF Level 4. </li>
+        <li> The subjects I took were:
+          <ul>
+            <li> English (Home Language) </li>
+            <li> Afrikaans (First Additional Language) </li>
+            <li> Mathematical Literacy </li>
+            <li> Life Orientation </li>
+            <li> Computer Applications Technology </li>
+            <li> Engineering Graphics & Design </li>
+            <li> Visual Art </li>
+          </ul>
+        </li>
+    </p>
+    <p class="card-text"><small class="text-muted"> Jan 2016 - Dec 2020 </small></p>
+  </div>
+</div>
+
+
+<!-- Experience section -->
+<h2 id="experience"> <u> Experience </u> </h2>
+
+<div class="card mb-3 mt-4" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="Images/Haulla.jpg" class="img-fluid rounded-start" alt="...">
     </div>
-    <div class="col-sm">
-      <h4>Digital Marketing at <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjQ4PDjyfD4AhXGGgYAHYlfCOgYABABGgJ3cw&sig=AOD64_3KXBMlAX50sFcM2jpgbliLJ-33qg&q&adurl&ved=2ahUKEwj_kujjyfD4AhUuMuwKHTjGBqsQ0Qx6BAgCEAE " 
-        target="_blank"> Google </a> </h4>
-      <p>I have also studied and completed my Digital Marketing qualification at Google. I started 27 February and finished on 26 April 2022. My certification is IAB (Interactive Advertisng Bureau) accredited. It is Google's Digital Skills for Africa and I learnt the Fundamentals of Digital Marketing.</p>
-    </div>
-    <div class="col-sm">
-      <h4> <a href=" https://www.allenglen.co.za/"
-        target="_blank"> Allen Glen Highschool </a> </h4>  
-      <p> I have completed my matric certification as well. I attended during the periods of January 2016 up until December 2020. I obtained a Bachelor's pass with an NQF Level 4. The subjects I took were: English (Home Language) ; Afrikaans (First Additional Language) ; Mathematical Literacy ; Life Orientation ; Computer Applications Technology ; Engineering Graphics and Design ; and Visual Art.</p>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"> Sales Representative </h5>
+        <h6 class="card-subtitle mb-2 text-muted"> Haulla Ltd </h6>
+        <p class="card-text">
+          <ul>
+            <li> I worked as a Sales Representative at Haulla waste management systems.</li>
+            <li> It was a Korean owned company that was based in the USA, to which I worked remotely.</li>
+            <li> Through this job I was able to gain call centre experience through sales as well as good skills and characteristics. </li>
+          </ul>
+        </p>
+        <p class="card-text"><small class="text-muted"> 2021 </small></p>
+      </div>
     </div>
   </div>
 </div>
 
-<h2 id="experience"> <u> Experience </u> </h2>
-<h4> Sales Representative at <a href="https://haulla.com/" 
-  target="_blank"> Haulla </a> </h4>
-<ul>
-  <li> I worked as a Sales Representative at Haulla waste management systems.</li>
-  <li> It was a Korean owned company that was based in the USA, to which I worked remotely.</li>
-  <li> Through this job I was able to gain call centre experience through sales as well as good skills and characteristics. </li>
-
-</ul>
-
+<!-- Soft Skills section -->
 <h2 id="skills"> <u> Skills </u> </h2>
+<br> 
+<!-- Coding skills section -->
+<h5 class="mb-3"> Coding </h5>
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> HTML </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100% </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> CSS </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100% </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Bootstrap </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> JavaScript </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 50%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> PHP </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 50%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> MySQL </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 50%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> GitHub </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 80%</span>
+  </li>
+</ol>
 
-<ul>
-    <li> Adaptable </li>
-    <li> Innovative </li>
-    <li> Tenacious </li>
-    <li> Fast Learner </li>
-    <li> Team Player </li>
-    <li> Hard Working </li>
-  </ul>
+<!-- Soft skills section -->
+<h5 class="mb-3 mt-4"> Soft Skills </h5>
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Attentive </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100% </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Communication </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100% </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Analytical </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Teamwork </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Adaptable </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Creative </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Innovative </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100%</span>
+  </li>
+</ol>
 
-<h1 id="contact me" text align="center"> <u>  Contact me </u> </h1>
-  <p text align="center"> Should you have any questions pertaining to my CV, portfolio or even my qualifications please do not hesitate to contact me. They are all available upon request:</p>
-    <form> 
-      <label>
-        <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="inputNameandSurname" class="col-form-label"> Your Name: </label>
-          </div>
-          <div class="col-auto">
-            <input type="Name and Surname" id="inputNameandSurname" class="form-control" aria-describedby="nameandsurnameHelpInline">
-          </div>
-          <div class="col-auto">
-            <span id="NameandSurnameHelpInline" class="form-text">
-              Your full Name and Surname please.
-            </span>
-          </div>
-        </div>
-      </label>
-      <label>
-        <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="inputGmailAddress" class="col-form-label"> Your Gmail Address: </label>
-          </div>
-          <div class="col-auto">
-            <input type="Gmail Address" id="inputGmailAddress" class="form-control" aria-describedby="GmailAddressHelpInline">
-          </div>
-          <div class="col-auto">
-            <span id="GmailAddressHelpInline" class="form-text">
-              Your Gmail Address please.
-            </span>
-          </div>
-        </div>
-      </label>
-      <label>
-        <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="inputSubject" class="col-form-label"> Subject: </label>
-          </div>
-          <div class="col-auto">
-            <input type="Subject" id="inputSubject" class="form-control" aria-describedby="SubjectHelpInline">
-          </div>
-          <div class="col-auto">
-            <span id="SubjectHelpInline" class="form-text">
-              What is it that you're inquiring about?
-            </span>
-          </div>
-        </div>
-        <button type="button" class=" btn btn-outline-info " style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; "> Submit </button>
+<!-- Workplace Section -->
+<h5 class="mb-3 mt-4"> Workplace Tools </h5>
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Slack </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100% </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Discord </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100% </span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw"> Microsoft Office </div>
+    </div>
+    <span class="badge bg-primary rounded-pill"> 100%</span>
+  </li>
+</ol>
+<br> 
 
-      </label>
-    </form>
+<!-- Project showcase Section -->
+<h2 id="projectPreview"> <u>  Preview of Projects </u> </h2>
+<br>
 
+<!-- Workplace Section -->
+<h5 class="mb-3 mt-1"> If you'd like to view these projects, head on to my GitHub! </h5>
+<br> 
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="Images/Lavania's To-do List.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/Landing Page.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/Netflix.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/Manage Profiles.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/Netflix (1).png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/Podcast Project.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/Podcast Project Shows.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/All Videos - Awesome Screenshot.png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/All Videos - Awesome Screenshot (1).png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/All Videos - Awesome Screenshot (2).png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/All Videos - Awesome Screenshot (3).png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/All Videos - Awesome Screenshot (4).png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/All Videos - Awesome Screenshot (5).png" />
+    </div>
+    <div class="swiper-slide">
+      <img src="Images/All Videos - Awesome Screenshot (6).png" />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
 </div>
+
+<br>
+
+<!-- Contact Me Section -->
+<h2 id="contactMe"> <u>  Contact me </u> </h2>
+<br>
+
+<h5> Call Me: </h5>
+      <a href="#" class="d-inline-block mb-2 p-2 text-decoration-none text-dark"> 
+      <i class="bi bi-telephone-fill"></i> Number available on request 
+      </a>
+      <br>
+      <br>
+
+      <h5> Follow me: </h5>
+      <a href="https://www.linkedin.com/in/lavania-naidoo-039190239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFPzqbYOHTZ%2Bfc6W1uNygpA%3D%3D" class="d-inline-block mb-3"> 
+      <span class="badge bg-light text-dark fs-6 p-2">
+      <i class="bi bi-linkedin"></i> LinkedIn
+      </span>
+      </a>
+      <br>
+      <a href="https://github.com/LavaniaNaidoo" class="d-inline-block mb-3">
+      <span class="badge bg-light text-dark fs-6 p-2"> 
+      <i class="bi bi-github"></i> GitHub
+      </span>
+      </a>
+      <br>
+      <a href="https://web.facebook.com/lavania.naidoo.56/" class="d-inline-block mb-3"> 
+      <span class="badge bg-light text-dark fs-6 p-2">
+      <i class="bi bi-facebook"></i> Facebook
+      </span>
+      </a>
+      <br>
+
+
+    <!-- Social media section -->
+    <br>
+    <br>
   <footer>
-    <ul id="Icon">
+     <ul id="Icon">
       <div class="LinkedIn_icon">
         <li>
       <a href="https://www.linkedin.com/in/lavania-naidoo-039190239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFPzqbYOHTZ%2Bfc6W1uNygpA%3D%3D " target= "_blank"> 
-      <img class="images" src="images/LinkedIn Icon.png" alt="Lavania Naidoo LinkedIn" width="50px">
+      
     </a>
         </li>
       </div>
@@ -159,15 +364,39 @@
       <div class="Facebook_Icon">
         <li>
       <a href="https://web.facebook.com/lavania.naidoo.56/" target="_blank"> 
-      <img class="images" src="images/Facebook Icon.png" alt="Lavania Naidoo Facebook" width="50px">
+      
     </a>
         </li> 
       </div>      
-    </ul>
+    </ul> 
   </footer>
-  
-</main>   
-  </footer>
-  
+</main>  
+</footer>
+
+  <!-- Script tags -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
 </body>
 </html>
